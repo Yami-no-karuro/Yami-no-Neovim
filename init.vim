@@ -82,7 +82,8 @@ call plug#end()
 " ====
 
 colorscheme catppuccin
-let g:airline_theme = 'catppuccin'
+let g:catppuccin_flavour='mocha'
+let g:airline_theme='catppuccin'
 
 " ====
 " Vim Mappings
