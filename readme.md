@@ -1,6 +1,6 @@
-# Yami-no-Neovim
+# Yami-no-Neo[Vim]
 
-## A simple and nostalgic Neovim configuration
+## A simple and nostalgic Vim configuration
 
 ### Requirements
 
