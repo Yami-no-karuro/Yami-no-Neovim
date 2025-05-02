@@ -29,7 +29,8 @@ mv ~/.config/nvim ~/.config/nvim.bak
 ```
     
 It is also recommended to clean pre-existing share, state and cache directories before proceeding.  
-Sometimes there may be problems with loading dependencies that no longer exist.
+Sometimes there may be problems with loading dependencies that no longer exist.  
+Please note that after the cleanup [Plug](https://github.com/junegunn/vim-plug) must be re-installed.
 
 ```bash
 mv ~/.local/share/nvim ~/.local/share/nvim.bak
