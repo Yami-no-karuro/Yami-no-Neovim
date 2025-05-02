@@ -20,7 +20,7 @@ This way we will be able to restore an old configuration in case something goes 
 ```bash
 mv ~/.config/nvim ~/.config/nvim.bak
 ```
-    
+
 It is also recommended to clean pre-existing share, state and cache directories before proceeding.  
 Sometimes there may be problems with loading dependencies that no longer exist.
 
@@ -46,7 +46,7 @@ rm -rf ~/.config/nvim/.git
 nvim
 ```
 
-**ATTENTION!**  
+**ATTENTION!**
 This setup uses plugins and external dependencies that needs to be installed with [Plug](https://github.com/junegunn/vim-plug).  
 Before proceeding, do not forget to execute `:PlugInstall`.
 
