@@ -4,7 +4,6 @@
 
 set nobackup
 set noswapfile
-set nocompatible
 set noerrorbells
 
 filetype plugin indent on
@@ -51,6 +50,7 @@ set softtabstop=4
 set expandtab
 set noshiftround
 set scrolloff=3
+set nowrap
 
 " ====
 " Command Line Completion
@@ -68,7 +68,6 @@ call plug#begin('~/.vim/plugged')
 Plug 'morhetz/gruvbox'
 Plug 'tpope/vim-sensible'
 Plug 'mattn/vim-lsp-settings'
-Plug 'preservim/nerdtree'
 Plug 'prabirshrestha/vim-lsp'
 Plug 'prabirshrestha/asyncomplete.vim'
 Plug 'prabirshrestha/asyncomplete-lsp.vim'
@@ -80,7 +79,7 @@ Plug 'vim-airline/vim-airline-themes'
 call plug#end()
 
 " ====
-" Variables Overrides
+" Overrides
 " ====
 
 set background=dark
@@ -89,14 +88,15 @@ colorscheme gruvbox
 let g:gruvbox_italic=1
 let g:airline_theme='gruvbox'
 
-let NERDTreeShowHidden=1
-
 " ====
 " Vim Default Mappings
-" 1. Space + t -> Open terminal
-" 2. Space + v -> Vertical split
-" 3. Space + o -> Orizontal split
+" 1. Space + e -> Open file explorer
+" 2. Space + t -> Open terminal
+" 3. Space + v -> Vertical split
+" 4. Space + o -> Orizontal split
 " ====
+
+nnoremap <leader>e :Explore<CR>
 nnoremap <leader>t :terminal<CR>
 nnoremap <leader>v :vsplit<CR>
 nnoremap <leader>o :split<CR>
@@ -108,6 +108,7 @@ vmap <S-Tab> <gv
 " LSP Autocomplete Mappings
 " Enable autocomplete navigation on Tab and S-Tab commands
 " ====
+
 inoremap <expr> <Tab> pumvisible() ? "\<C-n>" : "\<Tab>"
 inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
 inoremap <expr> <cr> pumvisible() ? asyncomplete#close_popup() : "\<cr>"
@@ -119,15 +120,10 @@ imap <c-space> <Plug>(asyncomplete_force_refresh)
 " 2. Space + pd -> Peek definition
 " 3. Space + h  -> Show hover info panel
 " ====
+
 nnoremap <leader>gd :LspDefinition<CR>
 nnoremap <leader>pd :LspPeekDefinition<CR>
 nnoremap <leader>h :LspHover<CR>
-
-" ====
-" Nerd Tree Mappings
-" 1. Space + e  -> Toggle file explorer
-" ====
-nnoremap <leader>e :NERDTreeToggle<CR>
 
 " ====
 " Fuzzy Finder Mappings
@@ -137,7 +133,7 @@ nnoremap <leader>e :NERDTreeToggle<CR>
 " 4. Space + fc -> Find words from cursor in current project
 " 5. Space + fs -> Find words from selection in current project
 " ====
-"
+
 nnoremap <leader>/ :BLines<CR>
 nnoremap <leader>ff :Files<CR>
 nnoremap <leader>fw :Rg<CR>
