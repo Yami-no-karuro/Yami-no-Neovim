@@ -68,6 +68,8 @@ call plug#begin('~/.vim/plugged')
 
 Plug 'catppuccin/nvim', { 'as': 'catppuccin' }
 Plug 'tpope/vim-sensible'
+Plug 'tpope/vim-commentary'
+Plug 'tpope/vim-fugitive'
 Plug 'junegunn/fzf'
 Plug 'junegunn/fzf.vim'
 Plug 'vim-airline/vim-airline'
@@ -83,7 +85,7 @@ colorscheme catppuccin
 let g:airline_theme = 'catppuccin'
 
 " ====
-" Vim Default Mappings
+" Vim Mappings
 " 1. Space + e -> Open file explorer
 " 2. Space + t -> Open terminal
 " 3. Space + v -> Vertical split
