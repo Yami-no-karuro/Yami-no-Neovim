@@ -8,3 +8,4 @@
 colorscheme catppuccin
 let g:catppuccin_flavour='mocha'
 let g:airline_theme='catppuccin'
+

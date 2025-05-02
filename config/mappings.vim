@@ -35,3 +35,4 @@ nnoremap <leader>ff :Files<CR>
 nnoremap <leader>fw :Rg<CR>
 nnoremap <leader>fc :Rg <C-R><C-W><CR>
 vnoremap <leader>fs y:Rg <C-R>"<CR>
+

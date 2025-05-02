@@ -42,7 +42,7 @@ set showmatch
 " Syntax & Encoding
 " ====
 
-synta on
+syntax on
 set encoding=utf-8
 set formatoptions=tcqrn1
 set hidden
@@ -66,3 +66,4 @@ set nowrap
 
 set showcmd
 set wildmenu
+
