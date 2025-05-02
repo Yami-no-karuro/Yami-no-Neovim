@@ -1,6 +1,6 @@
 # Yami-no-Neo[Vim]
 
-## A simple and nostalgic Vim configuration
+## A simple, nostalgic Vim configuration
 
 ### Requirements
 
@@ -14,13 +14,6 @@ Some features may not be available if one of the requirements is not met.
 
 ### Installation 
 
-To manage and install external modules, [Plug](https://github.com/junegunn/vim-plug) must be correctly configured.  
-Please note that if you already have it installed for a standard [Vim](https://github.com/vim/vim) configuration you will still need to run the following command again.
-
-```bash
-curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-```
-
 With all the requirements met, we can proceed by making a backup copy of any pre-existing configurations.  
 This way we will be able to restore an old configuration in case something goes wrong.
 
@@ -29,8 +22,7 @@ mv ~/.config/nvim ~/.config/nvim.bak
 ```
     
 It is also recommended to clean pre-existing share, state and cache directories before proceeding.  
-Sometimes there may be problems with loading dependencies that no longer exist.  
-Please note that after the cleanup [Plug](https://github.com/junegunn/vim-plug) must be re-installed.
+Sometimes there may be problems with loading dependencies that no longer exist.
 
 ```bash
 mv ~/.local/share/nvim ~/.local/share/nvim.bak
@@ -38,8 +30,15 @@ mv ~/.local/state/nvim ~/.local/state/nvim.bak
 mv ~/.cache/nvim ~/.cache/nvim.bak
 ```
 
+To manage and install external modules, [Plug](https://github.com/junegunn/vim-plug) must be correctly configured.  
+Please note that if you already have it installed for a standard [Vim](https://github.com/vim/vim) configuration you will still need to run the following command again.
+
+```bash
+curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+```
+
 Finally, we can clone the repository into the local configuration directory.  
-The new configuration will be loaded at the next [Neovim](https://github.com/neovim/neovim).
+The new setup will be loaded at the next [Neovim](https://github.com/neovim/neovim) launch.
 
 ```bash
 git clone https://github.com/Yami-no-karuro/Yami-no-Neovim.git ~/.config/nvim
@@ -47,8 +46,9 @@ rm -rf ~/.config/nvim/.git
 nvim
 ```
 
-This setup uses some plugins and external dependencies that need to be installed.  
-Before proceeding, do not forget to execute `:PlugInstall`!
+**ATTENTION!**  
+This setup uses plugins and external dependencies that needs to be installed with [Plug](https://github.com/junegunn/vim-plug).  
+Before proceeding, do not forget to execute `:PlugInstall`.
 
 ### Mappings (Vim)
 
