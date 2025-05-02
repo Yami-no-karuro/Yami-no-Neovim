@@ -15,6 +15,7 @@ let mapleader=' '
 " Appearance Settings
 " ====
 
+set termguicolors
 set relativenumber
 set ruler
 set showmode
@@ -65,12 +66,8 @@ set wildmenu
 
 call plug#begin('~/.vim/plugged')
 
-Plug 'morhetz/gruvbox'
+Plug 'catppuccin/nvim', { 'as': 'catppuccin' }
 Plug 'tpope/vim-sensible'
-Plug 'mattn/vim-lsp-settings'
-Plug 'prabirshrestha/vim-lsp'
-Plug 'prabirshrestha/asyncomplete.vim'
-Plug 'prabirshrestha/asyncomplete-lsp.vim'
 Plug 'junegunn/fzf'
 Plug 'junegunn/fzf.vim'
 Plug 'vim-airline/vim-airline'
@@ -82,11 +79,8 @@ call plug#end()
 " Overrides
 " ====
 
-set background=dark
-colorscheme gruvbox
-
-let g:gruvbox_italic=1
-let g:airline_theme='gruvbox'
+colorscheme catppuccin
+let g:airline_theme = 'catppuccin'
 
 " ====
 " Vim Default Mappings
@@ -103,27 +97,6 @@ nnoremap <leader>o :split<CR>
 
 vmap <Tab> >gv
 vmap <S-Tab> <gv
-
-" ====
-" LSP Autocomplete Mappings
-" Enable autocomplete navigation on Tab and S-Tab commands
-" ====
-
-inoremap <expr> <Tab> pumvisible() ? "\<C-n>" : "\<Tab>"
-inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
-inoremap <expr> <cr> pumvisible() ? asyncomplete#close_popup() : "\<cr>"
-imap <c-space> <Plug>(asyncomplete_force_refresh)
-
-" ====
-" LSP Mappings
-" 1. Space + gd -> Go to definition
-" 2. Space + pd -> Peek definition
-" 3. Space + h  -> Show hover info panel
-" ====
-
-nnoremap <leader>gd :LspDefinition<CR>
-nnoremap <leader>pd :LspPeekDefinition<CR>
-nnoremap <leader>h :LspHover<CR>
 
 " ====
 " Fuzzy Finder Mappings
