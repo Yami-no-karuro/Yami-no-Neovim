@@ -18,6 +18,8 @@ nnoremap <leader>t :terminal<CR>
 nnoremap <leader>v :vsplit<CR>
 nnoremap <leader>o :split<CR>
 
+vnoremap <silent> y "+y
+
 vmap <Tab> >gv
 vmap <S-Tab> <gv
 
