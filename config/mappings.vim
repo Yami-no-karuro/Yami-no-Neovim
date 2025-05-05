@@ -6,30 +6,42 @@
 " ====
 
 " ====
-" Vim
-" 1. Space + e -> Open file explorer
-" 2. Space + t -> Open terminal
-" 3. Space + v -> Vertical split
-" 4. Space + o -> Orizontal split
+" Terminal, file explorer and splits
+" 1. Space + ;  -> Open terminal
+" 2. Space + e  -> Open file explorer
+" 3. Space + vs -> Vertical split
+" 4. Space + os -> Orizontal split
 " ====
 
+nnoremap <leader>; :terminal<CR>
 nnoremap <leader>e :Explore<CR>
-nnoremap <leader>t :terminal<CR>
-nnoremap <leader>v :vsplit<CR>
-nnoremap <leader>o :split<CR>
+nnoremap <leader>vs :vsplit<CR>
+nnoremap <leader>os :split<CR>
+
+" ====
+" Tabs
+" 1. Space + ts -> Spawn new tab
+" 2. Space + tn -> Go to next tab
+" 3. Space + tp -> Go to previous tab
+" ====
+
+nnoremap <leader>ts :tabnew<CR>
+nnoremap <leader>tn :tabnext<CR>
+nnoremap <leader>tp :tabprevious<CR>
 
 vnoremap <silent> y "+y
+nnoremap <silent> p "+p
 
 vmap <Tab> >gv
 vmap <S-Tab> <gv
 
 " ====
-" Fuzzy Finder
-" 1. Space + /  -> Find words current buffer
-" 2. Space + ff -> Find files in current project
-" 3. Space + fw -> Find words in current project
-" 4. Space + fc -> Find words from cursor in current project
-" 5. Space + fs -> Find words from selection in current project
+" Fuzzy Finder (search)
+" 1. Space + /  -> Search current buffer
+" 2. Space + ff -> Search files in current project
+" 3. Space + fw -> Search in current project
+" 4. Space + fc -> Search from cursor in current project
+" 5. Space + fs -> Search from selection in current project
 " ====
 
 nnoremap <leader>/ :BLines<CR>
