@@ -6,6 +6,26 @@
 " ====
 
 " ====
+" General mappings
+" ====
+
+nnoremap <silent> y "+y
+nnoremap <silent> yy "+yy
+vnoremap <silent> y "+y
+
+nnoremap <silent> d "+d
+nnoremap <silent> dd "+dd
+vnoremap <silent> d "+d
+
+nnoremap <silent> p "+p
+nnoremap <silent> P "+P
+vnoremap <silent> p "+p
+vnoremap <silent> P "+P
+
+vmap <Tab> >gv
+vmap <S-Tab> <gv
+
+" ====
 " Terminal, file explorer and splits
 " 1. Space + ;  -> Open terminal
 " 2. Space + e  -> Open file explorer
@@ -29,12 +49,6 @@ nnoremap <leader>ts :tabnew<CR>
 nnoremap <leader>tn :tabnext<CR>
 nnoremap <leader>tp :tabprevious<CR>
 
-vnoremap <silent> y "+y
-nnoremap <silent> p "+p
-
-vmap <Tab> >gv
-vmap <S-Tab> <gv
-
 " ====
 " Fuzzy Finder (search)
 " 1. Space + /  -> Search current buffer
@@ -49,4 +63,3 @@ nnoremap <leader>ff :Files<CR>
 nnoremap <leader>fw :Rg<CR>
 nnoremap <leader>fc :Rg <C-R><C-W><CR>
 vnoremap <leader>fs y:Rg <C-R>"<CR>
-
