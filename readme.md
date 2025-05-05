@@ -50,12 +50,18 @@ nvim
 This setup uses plugins and external dependencies that needs to be installed with [Plug](https://github.com/junegunn/vim-plug).  
 Before proceeding, do not forget to execute `:PlugInstall`.
 
-### Mappings (Vim)
+### Mappings (Terminal, file explorer and splits)
 
-1. `Space + e` -> Open file explorer
-2. `Space + t` -> Open terminal
-3. `Space + v` -> Vertical split
-4. `Space + o` -> Orizontal split
+1. `Space + ;`  -> Open terminal
+2. `Space + e`  -> Open file explorer
+3. `Space + vs` -> Vertical split
+4. `Space + os` -> Orizontal split
+
+### Mappings (Tabs)
+
+1. `Space + ts` -> Spawn new tab
+2. `Space + tn` -> Go to next tab
+3. `Space + tp` -> Go to previous tab
 
 ### Mappings (Fuzzy-Finder)
 
