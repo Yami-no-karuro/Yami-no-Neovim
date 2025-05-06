@@ -19,8 +19,6 @@ This way we will be able to restore an old configuration in case something goes 
 
 ```bash
 # rm -rf ~/.config/nvim
-# ...
-
 mv ~/.config/nvim ~/.config/nvim.bak
 ```
 
@@ -31,8 +29,6 @@ Sometimes there may be problems with loading dependencies that no longer exist.
 # rm -rf ~/.local/share/nvim
 # rm -rf ~/.local/state/nvim
 # rm -rf ~/.cache/nvim
-# ...
-
 mv ~/.local/share/nvim ~/.local/share/nvim.bak
 mv ~/.local/state/nvim ~/.local/state/nvim.bak
 mv ~/.cache/nvim ~/.cache/nvim.bak
