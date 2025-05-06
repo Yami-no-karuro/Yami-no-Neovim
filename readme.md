@@ -1,6 +1,6 @@
-# Yami-no-Neo[Vim]
+# Yami-no-Neovim
 
-## A simple, nostalgic VimScript configuration for Neovim
+## A nostalgic Vim-Script configuration for Neovim
 
 ### Requirements
 
@@ -53,6 +53,11 @@ nvim
 **ATTENTION!**
 This setup uses plugins and external dependencies that needs to be installed with [Plug](https://github.com/junegunn/vim-plug).  
 Before proceeding, do not forget to execute `:PlugInstall`.
+
+### Neovim + Tmux
+
+To make the most of the setup, it is recommended to use [Neovim](https://github.com/neovim/neovim) inside a [Tmux](https://github.com/tmux/tmux) instance.  
+Have a look at the pre-configured version [here](https://github.com/Yami-no-karuro/Yami-no-Neovim/blob/main/tmux/readme.md)!
 
 ### Mappings (File Explorer and Splits)
 
