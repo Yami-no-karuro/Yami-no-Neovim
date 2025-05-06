@@ -59,10 +59,6 @@ Before proceeding, do not forget to execute `:PlugInstall`.
 To make the most of the setup, it is recommended to use [Neovim](https://github.com/neovim/neovim) inside a [Tmux](https://github.com/tmux/tmux) instance.  
 Please, have a look at the pre-configured [Yami-no-Tmux](https://github.com/Yami-no-karuro/Yami-no-Neovim/blob/main/tmux/readme.md).
 
-### (Optional) Opendev
-
-Add the following function to your `~/.bashrc`
-
 ### Mappings (File Explorer and Splits)
 
 1. `Space + e`  -> Open file explorer
