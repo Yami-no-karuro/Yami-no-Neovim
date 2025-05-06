@@ -54,7 +54,7 @@ nvim
 This setup uses plugins and external dependencies that needs to be installed with [Plug](https://github.com/junegunn/vim-plug).  
 Before proceeding, do not forget to execute `:PlugInstall`.
 
-### Mappings (Terminal, file explorer and splits)
+### Mappings (File Explorer and Splits)
 
 1. `Space + e`  -> Open file explorer
 2. `Space + vs` -> Vertical split
