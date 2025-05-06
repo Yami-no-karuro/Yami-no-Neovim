@@ -22,7 +22,7 @@ git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 Finally, we can clone the configuration file.
 
 ```bash
-wget -O ~/.tmux.conf https://github.com/Yami-no-karuro/Yami-no-Neovim/blob/main/tmux/.tmux.conf
+wget -O ~/.tmux.conf https://github.com/Yami-no-karuro/Yami-no-Neovim/raw/refs/heads/main/tmux/.tmux.conf
 ```
 
 **ATTENTION!**
