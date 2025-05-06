@@ -6,7 +6,8 @@
 " ====
 
 " ====
-" General mappings
+" General Mappings
+" System Registers Integration
 " ====
 
 nnoremap <silent> y "+y
@@ -26,14 +27,12 @@ vmap <Tab> >gv
 vmap <S-Tab> <gv
 
 " ====
-" Terminal, file explorer and splits
-" 1. Space + ;  -> Open terminal
-" 2. Space + e  -> Open file explorer
-" 3. Space + vs -> Vertical split
-" 4. Space + os -> Orizontal split
+" File Explorer and Splits
+" 1. Space + e  -> Open file explorer
+" 2. Space + vs -> Vertical split
+" 3. Space + os -> Orizontal split
 " ====
 
-nnoremap <leader>; :terminal<CR>
 nnoremap <leader>e :Explore<CR>
 nnoremap <leader>vs :vsplit<CR>
 nnoremap <leader>os :split<CR>
@@ -50,7 +49,7 @@ nnoremap <leader>tn :tabnext<CR>
 nnoremap <leader>tp :tabprevious<CR>
 
 " ====
-" Fuzzy Finder (search)
+" Fuzzy Finder (Search)
 " 1. Space + /  -> Search current buffer
 " 2. Space + ff -> Search files in current project
 " 3. Space + fw -> Search in current project
@@ -63,3 +62,4 @@ nnoremap <leader>ff :Files<CR>
 nnoremap <leader>fw :Rg<CR>
 nnoremap <leader>fc :Rg <C-R><C-W><CR>
 vnoremap <leader>fs y:Rg <C-R>"<CR>
+
