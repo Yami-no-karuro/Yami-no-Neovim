@@ -28,3 +28,20 @@ wget -O ~/.tmux.conf https://github.com/Yami-no-karuro/Yami-no-Neovim/raw/refs/h
 **ATTENTION!**
 This setup uses plugins and external dependencies that needs to be installed with [TPM](https://github.com/tmux-plugins/tpm).  
 Before proceeding, do not forget to execute `Ctrl + a, I`.
+
+### Opendev
+
+To quickly open the development environment add the following block to your `~/.bashrc`.  
+Note that this is **completely optional**.
+
+```bash
+alias vim='nvim'
+opendev() {
+    if [ -z "$TMUX" ]; then
+        tmux new-session -A -s dev "nvim ."
+    else 
+        nvim .
+    fi
+}
+```
+
