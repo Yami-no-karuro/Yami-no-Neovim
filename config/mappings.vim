@@ -27,7 +27,7 @@ vmap <Tab> >gv
 vmap <S-Tab> <gv
 
 " ====
-" File Explorer and Splits
+" File Explorer & Splits
 " 1. Space + e  -> Open file explorer
 " 2. Space + vs -> Vertical split
 " 3. Space + os -> Orizontal split
