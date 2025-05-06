@@ -56,10 +56,9 @@ Before proceeding, do not forget to execute `:PlugInstall`.
 
 ### Mappings (Terminal, file explorer and splits)
 
-1. `Space + ;`  -> Open terminal
-2. `Space + e`  -> Open file explorer
-3. `Space + vs` -> Vertical split
-4. `Space + os` -> Orizontal split
+1. `Space + e`  -> Open file explorer
+2. `Space + vs` -> Vertical split
+3. `Space + os` -> Orizontal split
 
 ### Mappings (Tabs)
 
