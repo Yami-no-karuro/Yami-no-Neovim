@@ -9,3 +9,5 @@ colorscheme catppuccin
 let g:catppuccin_flavour='mocha'
 let g:airline_theme='catppuccin'
 
+let g:asyncomplete_auto_popup = 0
+

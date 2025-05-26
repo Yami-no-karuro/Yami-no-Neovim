@@ -27,6 +27,21 @@ vmap <Tab> >gv
 vmap <S-Tab> <gv
 
 " ====
+" LSP & Autocomplete
+" 1. Space + gd -> Go to definition
+" 2. Space + pd -> Peek definition
+" 3. Space + h  -> Hover symbol
+" ====
+
+inoremap <expr> <Tab>   pumvisible() ? "\<C-n>" : "\<Tab>"
+inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
+inoremap <expr> <cr>    pumvisible() ? asyncomplete#close_popup() : "\<cr>"
+
+nnoremap <leader>gd :LspDefinition<CR>
+nnoremap <leader>pd :LspPeekDefinition<CR>
+nnoremap <leader>h :LspHover<CR>
+
+" ====
 " File Explorer & Splits
 " 1. Space + e  -> Open file explorer
 " 2. Space + vs -> Vertical split
