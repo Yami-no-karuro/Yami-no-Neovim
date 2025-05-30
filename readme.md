@@ -59,23 +59,3 @@ Before proceeding, do not forget to execute `:PlugInstall`.
 To make the most of the setup, it is recommended to use [Neovim](https://github.com/neovim/neovim) inside a [Tmux](https://github.com/tmux/tmux) instance.  
 Please, have a look at the pre-configured [Yami-no-Tmux](https://github.com/Yami-no-karuro/Yami-no-Neovim/blob/main/tmux/readme.md).
 
-### Mappings (File Explorer and Splits)
-
-1. `Space + e`  -> Open file explorer
-2. `Space + vs` -> Vertical split
-3. `Space + os` -> Orizontal split
-
-### Mappings (Tabs)
-
-1. `Space + ts` -> Spawn new tab
-2. `Space + tn` -> Go to next tab
-3. `Space + tp` -> Go to previous tab
-
-### Mappings (Fuzzy-Finder)
-
-1. `Space + /`  -> Find words current buffer
-2. `Space + ff` -> Find files in current project
-3. `Space + fw` -> Find words in current project
-4. `Space + fc` -> Find words from cursor in current project
-5. `Space + fs` -> Find words from selection in current project
-

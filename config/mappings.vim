@@ -55,8 +55,9 @@ nnoremap <leader>os :split<CR>
 " ====
 " Tabs
 " 1. Space + ts -> Spawn new tab
-" 2. Space + tn -> Go to next tab
-" 3. Space + tp -> Go to previous tab
+" 2. Space + tc -> Close current tab
+" 3. Space + tn -> Go to next tab
+" 4. Space + tp -> Go to previous tab
 " ====
 
 nnoremap <leader>ts :tabnew<CR>
