@@ -42,10 +42,11 @@ nnoremap <leader>pd :LspPeekDefinition<CR>
 nnoremap <leader>h :LspHover<CR>
 
 " ====
-" File Explorer & Splits
+" File Explorer, Git & Splits
 " 1. Space + e  -> Open file explorer
-" 2. Space + vs -> Vertical split
-" 3. Space + os -> Orizontal split
+" 2. Space + gd -> Git diff
+" 3. Space + vs -> Vertical split
+" 5. Space + os -> Orizontal split
 " ====
 
 nnoremap <leader>e :Explore<CR>
