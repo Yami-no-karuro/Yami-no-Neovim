@@ -29,6 +29,14 @@ wget -O ~/.tmux.conf https://github.com/Yami-no-karuro/Yami-no-Neovim/raw/refs/h
 This setup uses plugins and external dependencies that needs to be installed with [TPM](https://github.com/tmux-plugins/tpm).  
 Before proceeding, do not forget to execute `Ctrl + a, I`.
 
+### Color-Scheme (Konsole)
+
+To further improve your development experience remember to set the [Catpuccin](https://github.com/catppuccin) theme as default for your terminal.
+
+```bash
+curl -fLo ~/.local/share/konsole/catppuccin-mocha.colorscheme https://github.com/catppuccin/konsole/raw/refs/heads/main/themes/catppuccin-mocha.colorscheme
+```
+
 ### Opendev
 
 To quickly open the development environment add the following block to your `~/.bashrc`.  
