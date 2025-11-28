@@ -12,5 +12,3 @@ let g:airline_theme='catppuccin'
 
 let g:asyncomplete_auto_popup = 0
 let g:lsp_diagnostics_enabled = 0
-
-

@@ -67,4 +67,3 @@ set nowrap
 
 set showcmd
 set wildmenu
-
