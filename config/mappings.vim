@@ -52,16 +52,26 @@ nnoremap <leader>os :split<CR>
 
 " ====
 " Tabs
-" 1. Space + ts -> Spawn new tab
-" 2. Space + tc -> Close current tab
-" 3. Space + tn -> Go to next tab
-" 4. Space + tp -> Go to previous tab
+" 1. Space + ts   -> Spawn new tab
+" 2. Space + tc   -> Close current tab
+" 3. Space + tn   -> Go to next tab
+" 4. Space + tp   -> Go to previous tab
+" 5. Space + t{n} -> Go to tab {n}
 " ====
 
 nnoremap <leader>ts :tabnew<CR>
 nnoremap <leader>tc :tabclose<CR>
 nnoremap <leader>tn :tabnext<CR>
 nnoremap <leader>tp :tabprevious<CR>
+nnoremap <leader>1 :1tabn<CR>
+nnoremap <leader>2 :2tabn<CR>
+nnoremap <leader>3 :3tabn<CR>
+nnoremap <leader>4 :4tabn<CR>
+nnoremap <leader>5 :5tabn<CR>
+nnoremap <leader>6 :6tabn<CR>
+nnoremap <leader>7 :7tabn<CR>
+nnoremap <leader>8 :8tabn<CR>
+nnoremap <leader>9 :9tabn<CR>
 
 " ====
 " Fuzzy Finder (Search)

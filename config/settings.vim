@@ -17,7 +17,6 @@ filetype plugin indent on
 
 set mouse=a
 let mapleader=' '
-set clipboard=unnamedplus
 
 " ====
 " Appearance
