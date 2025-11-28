@@ -33,10 +33,6 @@ vmap <S-Tab> <gv
 " 3. Space + h  -> Hover symbol
 " ====
 
-inoremap <expr> <Tab>   pumvisible() ? "\<C-n>" : "\<Tab>"
-inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
-inoremap <expr> <cr>    pumvisible() ? asyncomplete#close_popup() : "\<cr>"
-
 nnoremap <leader>gd :LspDefinition<CR>
 nnoremap <leader>pd :LspPeekDefinition<CR>
 nnoremap <leader>h :LspHover<CR>
@@ -61,6 +57,7 @@ nnoremap <leader>os :split<CR>
 " ====
 
 nnoremap <leader>ts :tabnew<CR>
+nnoremap <leader>tc :tabclose<CR>
 nnoremap <leader>tn :tabnext<CR>
 nnoremap <leader>tp :tabprevious<CR>
 
@@ -78,4 +75,3 @@ nnoremap <leader>ff :Files<CR>
 nnoremap <leader>fw :Rg<CR>
 nnoremap <leader>fc :Rg <C-R><C-W><CR>
 vnoremap <leader>fs y:Rg <C-R>"<CR>
-
