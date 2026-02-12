@@ -7,8 +7,9 @@
 
 " ====
 " General Mappings
-" System Registers Integration
 " ====
+
+nnoremap <leader>j :execute "normal! '" . getcharstr()<CR>
 
 nnoremap <silent> y "+y
 nnoremap <silent> yy "+yy
@@ -23,32 +24,50 @@ nnoremap <silent> P "+P
 vnoremap <silent> p "+p
 vnoremap <silent> P "+P
 
-vmap <Tab> >gv
-vmap <S-Tab> <gv
+xnoremap <Tab> >gv
+xnoremap <S-Tab> <gv
 
 " ====
-" LSP & Autocomplete
-" 1. Space + gd -> Go to definition
-" 2. Space + pd -> Peek definition
-" 3. Space + h  -> Hover symbol
+" Language Server Protocol
+" [Wiki](https://github.com/neoclide/coc.nvim/wiki/Using-coc-extensions)
 " ====
 
-nnoremap <leader>gd :LspDefinition<CR>
-nnoremap <leader>pd :LspPeekDefinition<CR>
-nnoremap <leader>h :LspHover<CR>
+inoremap <silent><expr> <TAB>
+      \ coc#pum#visible() ? coc#pum#next(1) :
+      \ CheckBackspace() ? "\<Tab>" :
+      \ coc#refresh()
+
+inoremap <expr><S-TAB> coc#pum#visible() ? coc#pum#prev(1) : "\<C-h>"
+inoremap <silent><expr> <CR> coc#pum#visible() ? coc#pum#confirm(): "\<C-g>u\<CR>\<c-r>=coc#on_enter()\<CR>"
+inoremap <silent><expr> <c-@> coc#refresh()
 
 " ====
-" File Explorer, Git & Splits
+" Comments
+" 1. Space + c -> Comment toggle
+" ====
+
+nnoremap <leader>c :Commentary<CR>
+vnoremap <leader>c :Commentary<CR>
+
+" ====
+" File Explorer & Splits
 " 1. Space + e  -> Open file explorer
-" 2. Space + gs -> Git split diff
 " 3. Space + vs -> Vertical split
 " 5. Space + os -> Orizontal split
 " ====
 
 nnoremap <leader>e :Explore<CR>
-nnoremap <leader>gs :Gdiffsplit<CR>
 nnoremap <leader>vs :vsplit<CR>
 nnoremap <leader>os :split<CR>
+
+" ====
+" Git
+" 1. Space + gs -> Open git diff (split)
+" 2. Space + gl -> Open git log
+" ====
+
+nnoremap <leader>gd :Gdiffsplit<CR>
+nnoremap <leader>gl :GcLog<CR>
 
 " ====
 " Tabs
