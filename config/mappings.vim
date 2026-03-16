@@ -24,9 +24,6 @@ nnoremap <silent> P "+P
 vnoremap <silent> p "+p
 vnoremap <silent> P "+P
 
-xnoremap <Tab> >gv
-xnoremap <S-Tab> <gv
-
 " ====
 " Language Server Protocol
 " [Wiki](https://github.com/neoclide/coc.nvim/wiki/Using-coc-extensions)
@@ -40,6 +37,30 @@ inoremap <silent><expr> <TAB>
 inoremap <expr><S-TAB> coc#pum#visible() ? coc#pum#prev(1) : "\<C-h>"
 inoremap <silent><expr> <CR> coc#pum#visible() ? coc#pum#confirm(): "\<C-g>u\<CR>\<c-r>=coc#on_enter()\<CR>"
 inoremap <silent><expr> <c-@> coc#refresh()
+
+function! CheckBackspace() abort
+  let col = col('.') - 1
+  return !col || getline('.')[col - 1]  =~# '\s'
+endfunction
+
+" ====
+" 1. [g -> Next diagnostic
+" 2. ]g -> Previous diagnostic
+" ====
+
+nmap <silent><nowait> [g <Plug>(coc-diagnostic-prev)
+nmap <silent><nowait> ]g <Plug>(coc-diagnostic-next)
+
+" ====
+" 1. gd -> Go to definition
+" 2. gy -> Go to type definition
+" 3. gi -> Go to implementation
+" 4. gr -> References
+" ====
+nmap <silent><nowait> gd <Plug>(coc-definition)
+nmap <silent><nowait> gy <Plug>(coc-type-definition)
+nmap <silent><nowait> gi <Plug>(coc-implementation)
+nmap <silent><nowait> gr <Plug>(coc-references)
 
 " ====
 " Comments
@@ -82,6 +103,7 @@ nnoremap <leader>ts :tabnew<CR>
 nnoremap <leader>tc :tabclose<CR>
 nnoremap <leader>tn :tabnext<CR>
 nnoremap <leader>tp :tabprevious<CR>
+
 nnoremap <leader>1 :1tabn<CR>
 nnoremap <leader>2 :2tabn<CR>
 nnoremap <leader>3 :3tabn<CR>
