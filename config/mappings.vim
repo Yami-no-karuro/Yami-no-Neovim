@@ -73,11 +73,13 @@ vnoremap <leader>c :Commentary<CR>
 " ====
 " File Explorer & Splits
 " 1. Space + e  -> Open file explorer
+" 2. Space + tt -> Open terminal
 " 3. Space + vs -> Vertical split
-" 5. Space + os -> Orizontal split
+" 4. Space + os -> Orizontal split
 " ====
 
 nnoremap <leader>e :Explore<CR>
+nnoremap <leader>tt :sp \| term<CR>
 nnoremap <leader>vs :vsplit<CR>
 nnoremap <leader>os :split<CR>
 
