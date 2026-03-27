@@ -10,6 +10,7 @@
 " ====
 
 nnoremap <leader>j :execute "normal! '" . getcharstr()<CR>
+tnoremap <Esc> <C-\><C-n>
 
 nnoremap <silent> y "+y
 nnoremap <silent> yy "+yy
